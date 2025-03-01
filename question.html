@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A11 Dev Board</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-100 container mx-auto p-4">
+   
+         
+               <div class="h-[100px] bg bg-white rounded-xl p-4 flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <img class="" src="./assets/logo.png" alt="">
+                <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+              </div>
+              <div>
+         <button id="button" class="bg-blue-700 px-5 py-4 text-white
+         font-bold rounded-xl">Back To Desk</button>
+                </div>
+                </div>
+
+               <section class="mt-6 grid gap-4">
+                <h1 class="text-3xl font-bold text-center">Blogs</h1>
+                  <div  class="bg-white shadow-xl rounded-xl p-6">
+                    <h1 class="text-xl font-bold">Question-1: What are the different ways to select an element in the DOM? </h1>
+                    <p class="mt-2">There are several ways to select an element in the DOM using JavaScript. Here are the most common methods.</p>
+                  </div>
+
+                  <div  class="bg-white shadow-xl rounded-xl p-6">
+                    <h1 class="text-xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                    <p class="mt-2">Differences Between innerHTML, innerText, and textContent is Use
+                         innerHTML → When inserting or modifying HTML content (but be cautious of XSS).
+                        Use innerText → When getting only the visible text of an element.
+                        Use textContent → When getting the raw text content, including hidden text, in the most efficient way.</p>
+                  </div>
+
+                  <div  class="bg-white shadow-xl rounded-xl p-6">
+                    <h1 class="text-xl font-bold">Question-3: What is event delegation in the DOM?</h1>
+                    <p class="mt-2">Event delegation is a technique in JavaScript where a parent element handles events for its child elements using event bubbling. Instead of adding event listeners to multiple child elements, you attach a single event listener to a parent and detect events based on the target element.</p>
+                  </div>
+
+                  <div  class="bg-white shadow-xl rounded-xl p-6">
+                    <h1 class="text-xl font-bold">Question-4: What is event bubbling in the DOM?
+                    </h1>
+                    <p class="mt-2">Event bubbling is a mechanism in the DOM where an event starts at the target element and propagates up through its ancestor elements until it reaches the document object.
+
+                    </p>
+                  </div>
+
+
+                  <div  class="bg-white shadow-xl rounded-xl p-6">
+                    <h1 class="text-xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                    <p class="mt-2">Use appendChild() / prepend() for better performance.
+                        Use removeChild() / remove() when deleting elements.
+                        Avoid innerHTML for dynamic content (security risks).</p>
+                  </div>
+               </section>
+                    <script src="./script/main.js"></script>
+                </body>
+                </html>
