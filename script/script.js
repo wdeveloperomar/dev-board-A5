@@ -40,8 +40,8 @@ const lightColors = ["#FFFAF0", "#F5F5DC", "#E6E6FA", "#FFFACD", "#F0FFF0", "#E0
                     history.appendChild(p);
                 }
                 this.setAttribute('disabled', 'true');
-                this.classList.remove('bg-blue-500');
-                this.classList.add('bg-gray-400', 'cursor-default');
+                this.classList.remove('bg-blue-500', 'cursor-pointer');
+                this.classList.add('bg-gray-400');
             });
             
         }
