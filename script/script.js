@@ -36,7 +36,7 @@ const lightColors = ["#FFFAF0", "#F5F5DC", "#E6E6FA", "#FFFACD", "#F0FFF0", "#E0
                 const p = document.createElement('p');
                 p.classList.add('mt-4', 'p-4', 'shadow-md', 'bg-slate-100');
                 for(let title of allTitle) {
-                    p.innerText = `${title.innerText} ${new Date().toLocaleTimeString()}`;
+                    p.innerText = `You have completed the task ${title.innerText} ${new Date().toLocaleTimeString()}`;
                     history.appendChild(p);
                 }
                 this.setAttribute('disabled', 'true');
@@ -45,6 +45,8 @@ const lightColors = ["#FFFAF0", "#F5F5DC", "#E6E6FA", "#FFFACD", "#F0FFF0", "#E0
             });
             
         }
+
+
         
         
 
