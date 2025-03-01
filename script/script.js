@@ -8,5 +8,9 @@ const lightColors = ["#FFFAF0", "#F5F5DC", "#E6E6FA", "#FFFACD", "#F0FFF0", "#E0
             index = (index + 1) % lightColors.length; // Loop back to the start
         });
 
+        const cards = document.getElementsByClassName('card')
+        const cardCounts = document.getElementById('card-counts')
+        cardCounts.innerText = cards.length
+
 
 

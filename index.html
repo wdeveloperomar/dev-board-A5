@@ -32,8 +32,8 @@
   
 
   
-   <section class="mt-4 flex gap-4">
-    <div class=" w-[1200px] bg-white rounded-xl">
+   <section class="mt-4 grid grid-cols-4  gap-4">
+    <div class= "bg-white rounded-xl col-span-3">
 
            <div class="grid grid-cols-3 p-4 gap-4">
           <div class=" bg-slate-100 shadow-xl flex justify-center
@@ -43,7 +43,7 @@
            <div>
            <p class="text-xl">Task Assigned
             <br>
-            <span id = "card6" class="font-bold text-2xl">6</span>
+            <span id = "card-counts" class="font-bold text-2xl"></span>
            </p>
           
            </div>
@@ -76,8 +76,8 @@
           </div>
 
  <!-- card-section -->
-    <div class="grid mt-6 grid-cols-3 p-4 gap-4">
-        <div class="bg-slate-100 rounded-xl p-4 shadow-xl">
+    <div id="cards" class="grid mt-6 grid-cols-3 p-4 gap-4">
+        <div class="bg-slate-100 rounded-xl p-4 shadow-xl card">
            <button class="text[16px] px-4 py-2 bg-white rounded-xl">ShopEase</button>
            <h1 class="text-2xl mt-4 font-[500px]">Fix Mobile Button Issue </h1>
            <p class=" mt-4 bg-white text-[16px] rounded-xl p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -88,11 +88,11 @@
            <h2 class="font-[500px] text-[20px]">21 March 2025</h2>
            </div>
            <button class="bg-blue-500 text-white px-4 py-1
-           rounded-xl" onclick= "updateNumbers(1)">Completed</button>
+           rounded-xl">Completed</button>
            </div>
          </div>
 
-         <div class="bg-slate-100 rounded-xl p-4 shadow-xl">
+         <div class="bg-slate-100 rounded-xl p-4 shadow-xl card">
             <button class="text[16px] px-4 py-2 bg-white rounded-xl">CloudSync</button>
             <h1 class="text-2xl mt-4 font-[500px]">Add Dark Mode </h1>
             <p class=" mt-4 bg-white text-[16px] rounded-xl p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -103,11 +103,11 @@
             <h2 class="font-[500px] text-[20px]">21 March 2025</h2>
             </div>
             <button class="bg-blue-500 text-white px-4 py-1
-            rounded-xl" onclick= "updateNumbers(2)">Completed</button>
+            rounded-xl">Completed</button>
             </div>
           </div>
 
-          <div class="bg-slate-100 rounded-xl p-4 shadow-xl">
+          <div class="bg-slate-100 rounded-xl p-4 shadow-xl card">
             <button class="text[16px] px-4 py-2 bg-white rounded-xl">SwiftPay</button>
             <h1 class="text-2xl mt-4 font-[500px]">Optimize  Home page  </h1>
             <p class=" mt-4 bg-white text-[16px] rounded-xl p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -118,11 +118,11 @@
             <h2 class="font-[500px] text-[20px]">21 March 2025</h2>
             </div>
             <button class="bg-blue-500 text-white px-4 py-1
-            rounded-xl" onclick= "updateNumbers(3)">Completed</button>
+            rounded-xl">Completed</button>
             </div>
           </div>
 
-          <div class="bg-slate-100 rounded-xl p-4 shadow-xl">
+          <div class="bg-slate-100 rounded-xl p-4 shadow-xl card">
             <button class="text[16px] px-4 py-2 bg-white rounded-xl">Meta</button>
             <h1 class="text-2xl mt-4 font-[500px]">Add new emoji 🤲 </h1>
             <p class=" mt-4 bg-white text-[16px] rounded-xl p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -133,11 +133,11 @@
             <h2 class="font-[500px] text-[20px]">21 March 2025</h2>
             </div>
             <button class="bg-blue-500 text-white px-4 py-1
-            rounded-xl" onclick= "updateNumbers(4)">Completed</button>
+            rounded-xl">Completed</button>
             </div>
           </div>
 
-          <div class="bg-slate-100 rounded-xl p-4 shadow-xl">
+          <div class="bg-slate-100 rounded-xl p-4 shadow-xl card">
             <button class="text[16px] px-4 py-2 bg-white rounded-xl">Google LLC</button>
             <h1 class="text-2xl mt-4 font-[500px]">Integrate OpenAI API  </h1>
             <p class=" mt-4 bg-white text-[16px] rounded-xl p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -148,11 +148,11 @@
             <h2 class="font-[500px] text-[20px]">21 March 2025</h2>
             </div>
             <button class="bg-blue-500 text-white px-4 py-1
-            rounded-xl" onclick= "updateNumbers(5)">Completed</button>
+            rounded-xl" >Completed</button>
             </div>
           </div>
 
-          <div class="bg-slate-100 rounded-xl p-4 shadow-xl">
+          <div class="bg-slate-100 rounded-xl p-4 shadow-xl card">
             <button class="text[16px] px-4 py-2 bg-white rounded-xl">Glassdoar</button>
             <h1 class="text-2xl mt-4 font-[500px]">Improve Job searching </h1>
             <p class=" mt-4 bg-white text-[16px] rounded-xl p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
@@ -163,7 +163,7 @@
             <h2 class="font-[500px] text-[20px]">21 March 2025</h2>
             </div>
             <button class="bg-blue-500 text-white px-4 py-1
-            rounded-xl" onclick= "updateNumbers(6)">Completed</button>
+            rounded-xl">Completed</button>
             </div>
           </div>
 
@@ -174,7 +174,7 @@
         </div>
 
         
-      <div class=" bg-white w-[400px] rounded-xl p-4">
+      <div class=" bg-white rounded-xl p-4">
        
             <div class="flex justify-center gap-2">
                 <div>
