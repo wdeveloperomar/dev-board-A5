@@ -15,15 +15,36 @@ const lightColors = ["#FFFAF0", "#F5F5DC", "#E6E6FA", "#FFFACD", "#F0FFF0", "#E0
         let convertedCardCounts = parseInt(cardCounts.innerText);
         const completeButtons = document.querySelectorAll('.complete-button');
         
-        console.log(completeButtons);
-        
         for (let button of completeButtons) {
-            button.addEventListener('click', function() {
+            button.addEventListener('click', function () {
+                alert('Board updated Succesfully')
+
                 if (convertedCardCounts > 0) {
-                    convertedCardCounts -= 1; 
+                    convertedCardCounts -= 1;
                     cardCounts.innerText = convertedCardCounts;
                 }
+                if (convertedCardCounts === 0) {
+                    alert('congrates!!! You have complete all the current task')
+                }
+                const completeCounts = document.getElementById('task-complete-count');
+                let convertedCompleteCounts = parseInt(completeCounts.innerText);
+                convertedCompleteCounts += 1;
+                completeCounts.innerText = convertedCompleteCounts;
+                
+                const allTitle = document.querySelectorAll('.title')
+                const history = document.getElementById('history');
+                const p = document.createElement('p');
+                p.classList.add('mt-4', 'p-4', 'shadow-md', 'bg-slate-100');
+                for(let title of allTitle) {
+                    p.innerText = `${title.innerText} ${new Date().toLocaleTimeString()}`;
+                    history.appendChild(p);
+                }
+                this.setAttribute('disabled', 'true');
+                this.classList.remove('bg-blue-500');
+                this.classList.add('bg-gray-400', 'cursor-default');
             });
+            
         }
+        
         
 
