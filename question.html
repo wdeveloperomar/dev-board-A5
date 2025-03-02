@@ -23,37 +23,37 @@
                <section class="mt-6 grid gap-4">
                 <h1 class="text-3xl font-bold text-center">Blogs</h1>
                   <div  class="bg-white shadow-xl rounded-xl p-6">
-                    <h1 class="text-xl font-bold">Question-1: What are the different ways to select an element in the DOM? </h1>
-                    <p class="mt-2">There are several ways to select an element in the DOM using JavaScript. Here are the most common methods.</p>
+                    <h1 class="text-xl font-bold">Question-1: What are the different ways to select an element in the DOM?</h1>
+<p class="mt-2">getElementById, getElementsByClassName, getElementsByTagName, querySelector, querySelectorAll ব্যবহার করে DOM থেকে উপাদান নির্বাচন করা যায়।</p>
                   </div>
 
                   <div  class="bg-white shadow-xl rounded-xl p-6">
-                    <h1 class="text-xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
-                    <p class="mt-2">Differences Between innerHTML, innerText, and textContent is Use
-                         innerHTML → When inserting or modifying HTML content (but be cautious of XSS).
-                        Use innerText → When getting only the visible text of an element.
-                        Use textContent → When getting the raw text content, including hidden text, in the most efficient way.</p>
+                    <h1 class="text-xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent?</h1>
+                    <p class="mt-2">
+                        innerHTML সম্পূর্ণ HTML কোড রিটার্ন করে, innerText শুধুমাত্র প্রদর্শিত টেক্সট রিটার্ন করে, আর textContent সব টেক্সট রিটার্ন করে (যতটুকু থাকুক না কেন)।
+                    </p>
                   </div>
 
                   <div  class="bg-white shadow-xl rounded-xl p-6">
                     <h1 class="text-xl font-bold">Question-3: What is event delegation in the DOM?</h1>
-                    <p class="mt-2">Event delegation is a technique in JavaScript where a parent element handles events for its child elements using event bubbling. Instead of adding event listeners to multiple child elements, you attach a single event listener to a parent and detect events based on the target element.</p>
+<p class="mt-2">
+    Event delegation হলো একটি কৌশল যেখানে প্যারেন্ট এলিমেন্ট চাইল্ড এলিমেন্টের ইভেন্ট হ্যান্ডেল করে ইভেন্ট বাবলিং এর মাধ্যমে। এতে প্রতিটি চাইল্ডে আলাদা ইভেন্ট লিসেনার যোগ না করে, একটি লিসেনার প্যারেন্টে বসিয়ে ইভেন্ট পরিচালনা করা যায়।
+</p>
                   </div>
 
                   <div  class="bg-white shadow-xl rounded-xl p-6">
-                    <h1 class="text-xl font-bold">Question-4: What is event bubbling in the DOM?
-                    </h1>
-                    <p class="mt-2">Event bubbling is a mechanism in the DOM where an event starts at the target element and propagates up through its ancestor elements until it reaches the document object.
-
-                    </p>
+                    <h1 class="text-xl font-bold">Question-4: What is event bubbling in the DOM?</h1>
+<p class="mt-2">
+    Event bubbling হলো একটি প্রক্রিয়া যেখানে একটি ইভেন্ট প্রথমে নির্দিষ্ট এলিমেন্টে ঘটে, তারপর ক্রমান্বয়ে তার প্যারেন্ট এলিমেন্টগুলোর দিকে ছড়িয়ে পড়ে।
+</p>
                   </div>
 
 
                   <div  class="bg-white shadow-xl rounded-xl p-6">
                     <h1 class="text-xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
-                    <p class="mt-2">Use appendChild() / prepend() for better performance.
-                        Use removeChild() / remove() when deleting elements.
-                        Avoid innerHTML for dynamic content (security risks).</p>
+<p class="mt-2">
+    document.createElement("tag") দিয়ে এলিমেন্ট তৈরি করা হয়, parent.appendChild(element) বা parent.append(element) দিয়ে যোগ করা হয়, আর element.remove() দিয়ে সরানো হয়।
+</p>
                   </div>
                </section>
                     <script src="./script/main.js"></script>
