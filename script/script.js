@@ -3,6 +3,21 @@ const lightColors = ["#FFFAF0", "#F5F5DC", "#E6E6FA", "#FFFACD", "#F0FFF0", "#E0
             "#2C3E50", "#34495E", "#3E2723", "#424242", "#1B2631", "#283747", "#2E4053"];
         let index = 0;
 
+
+        // current date code
+        const now = new Date();
+
+        const day = now.toLocaleDateString('en-US', { weekday: 'short' }); // e.g., "Wed"
+        const date = now.toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' }).replace(',', '');
+        console.log(date)
+        const frontDay = document.getElementById('day');
+        frontDay.innerText = day;
+
+        const frontDate = document.getElementById('date');
+        frontDate.innerText = date;
+
+
+        // task code
         document.getElementById("colorBtn").addEventListener("click", function() {
             document.body.style.backgroundColor = lightColors[index];
             index = (index + 1) % lightColors.length;
