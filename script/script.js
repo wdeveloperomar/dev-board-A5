@@ -9,7 +9,6 @@ const lightColors = ["#FFFAF0", "#F5F5DC", "#E6E6FA", "#FFFACD", "#F0FFF0", "#E0
 
         const day = now.toLocaleDateString('en-US', { weekday: 'short' }); // e.g., "Wed"
         const date = now.toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' }).replace(',', '');
-        console.log(date)
         const frontDay = document.getElementById('day');
         frontDay.innerText = day;
 
@@ -46,14 +45,13 @@ const lightColors = ["#FFFAF0", "#F5F5DC", "#E6E6FA", "#FFFACD", "#F0FFF0", "#E0
                 convertedCompleteCounts += 1;
                 completeCounts.innerText = convertedCompleteCounts;
                 
-                const allTitle = document.querySelectorAll('.title')
+                const title = this.closest('.card').querySelector('.title');
                 const history = document.getElementById('history');
                 const p = document.createElement('p');
                 p.classList.add('mt-4', 'p-4', 'shadow-md', 'bg-slate-100');
-                for(let title of allTitle) {
-                    p.innerText = `You have completed the task ${title.innerText} ${new Date().toLocaleTimeString()}`;
-                    history.appendChild(p);
-                }
+                p.innerText = `You have completed the task ${title.innerText} at ${new Date().toLocaleTimeString()}`;
+                history.appendChild(p);
+
                 this.setAttribute('disabled', 'true');
                 this.classList.remove('bg-blue-500', 'cursor-pointer');
                 this.classList.add('bg-gray-400');
