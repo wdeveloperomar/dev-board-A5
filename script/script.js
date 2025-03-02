@@ -61,6 +61,11 @@ const lightColors = ["#FFFAF0", "#F5F5DC", "#E6E6FA", "#FFFACD", "#F0FFF0", "#E0
             
         }
 
+        document.getElementById('delete-history').addEventListener('click', function () {
+            const history = document.getElementById('history');
+            history.innerHTML = '';
+        })
+
 
         
         
